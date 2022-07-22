@@ -8,11 +8,11 @@ input.onButtonPressed(Button.B, function () {
     butB = 1
 })
 basic.forever(function () {
-    while (butA == 1) {
+    if (butA == 1) {
         basic.showNumber(index)
-        basic.pause(200)
+        basic.pause(100)
         index += 1
-        while (butB == 1) {
+        if (butB == 1) {
             butA = 0
             butB = 0
             index = 0
